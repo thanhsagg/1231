@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Login From</title>
+    <link rel="stylesheet" href="ESP.css"/>
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-database-compat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		
+</head>
+  <body>
+    <nav>
+        <label class="logo">User</label>
+        <ul>
+            <li><a class="module" id="module1" data-module-id="MODULE1" href="#">Module1</a></li>
+            <li><a class="module" id="module2" data-module-id="MODULE2" href="#">Module2</a></li>
+            <li><a class="module" id="module3" data-module-id="MODULE3" href="#">Module3</a></li>
+        </ul>
+        <label id="icon">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+    </nav>
+    
+    <div class="container"> 
+        <label class="switch">
+            <span class="icon">
+                <ion-icon name="sunny-outline"></ion-icon>
+            </span>
+            <input type="checkbox" id="sun" onchange="updateData(ref), readData(ref)">
+                <span class="slider" ></span>
+        </label>
+
+        <label class="switch">
+            <span class="icon">
+                <ion-icon name="rainy-outline"></ion-icon>
+            </span>
+            <input type="checkbox" id="rainy" onchange="updateData(ref), readData(ref)">
+                <span class="slider"></span>
+        </label>
+
+        <label class="switch">
+            <span class="icon">
+                <ion-icon name="warning-outline"></ion-icon>
+            </span>
+            <input type="checkbox" id="warning" onchange="updateData(ref), readData(ref)">
+                <span class="slider"></span>
+        </label>
+
+        <label class="switch">
+            <span class="icon">
+                <ion-icon name="headset-outline"></ion-icon>
+            </span>
+            <input type="checkbox" id="headset" onchange="updateData(ref), readData(ref)">
+                <span class="slider"></span>
+        </label>
+    </div>
+    
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/374756/population.js'></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body> 
+</html>
